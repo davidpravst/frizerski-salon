@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hairdresser Mirko</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-vmesne">
+
+    <!-- Header -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <a href="index.html" class="navbar-brand"><img class="img-responsive" src="img/haidresser-mirko-logo.png" alt="Hairdresser Mirko"></a>
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                  
+                  <form class="navbar-form navbar-right">
+                     <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Iskalnik">
+                     </div>
+			         <button type="submit" class="btn btn-default">Išči</button>
+		          </form>
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#kaj-nudimo">Kaj nudimo</a></li>
+                      <li><a href="#naroci-se">Naroči se</a></li>
+                      <li><a href="#faq">FAQ</a></li>
+                      <li><a href="#kontakt">Kontakt</a></li>
+                  </ul>
+                  
+              </div>
+          </div>  
+      </div>
+      
+     <!-- Header konec --> 
+      
+      
+        <!-- Slajder za slike -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/mirko-salon-1.jpg" class="img-responsive" alt="Mirko">
+            </div>
+
+            <div class="item">
+              <img src="img/mirko-salon-2.jpg" class="img-responsive" alt="Mirko">
+            </div>
+
+            <div class="item">
+              <img src="img/mirko-salon-3.jpg" class="img-responsive" alt="Mirko">
+            </div>
+
+            <div class="item">
+              <img src="img/mirko-salon-4.jpg" class="img-responsive" alt="Mirko">
+            </div>
+
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Prejšnji</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Naslednji</span>
+          </a>
+        </div>
+        <!-- Slajder za slike konec -->    
+        
+        <!-- Kaj nudimo -->
+        <a name="kaj-nudimo"></a>
+        <div class="container">
+             
+             <div class="row">
+                <h1 class="header-center">Kaj nudimo</h1>
+             </div>
+             <div class="row">
+                 
+              <div class="col-md-4">
+                  <div class="thumbnail">
+                    <div class="caption">  
+                    <h2>Nega las <img class="pull-right" src="img/ikona-1.png"></h2>
+                    <img class="img-responsive" src="img/mirko-salon-2.jpg" alt="Nega las">
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="thumbnail">
+                    <div class="caption">  
+                    <h2>Barvanje <img class="pull-right" src="img/ikona-2.png"></h2>
+                    <img class="img-responsive" src="img/mirko-salon-3.jpg" alt="Nega las">
+                    </div>
+                  </div>
+              </div>
+                 
+              <div class="col-md-4">
+                  <div class="thumbnail">
+                    <div class="caption">  
+                    <h2>Striženje <img class="pull-right" src="img/ikona-3.png"></h2>
+                    <img class="img-responsive" src="img/mirko-salon-4.jpg" alt="Nega las">
+                    </div>
+                  </div>
+              </div>
+            
+        </div>    
+        <!-- Kaj nudimo konec -->
+        <hr>
+        <!-- Naroči se -->
+        <a name="naroci-se"></a>
+        <div class="container">
+            <div class="row">
+                <h1 class="header-center">Naroči se</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <form>
+                      <div class="form-group">
+                        <label for="ime-in-priimek">Ime in priimek</label>
+                        <input type="text" class="form-control" id="ime-in-priimek">
+                      </div>
+                      <div class="form-group">
+                        <label for="telefon">Telefon</label>
+                        <input type="text" class="form-control" id="telefon">
+                      </div>
+                      <div class="form-group">
+                        <label for="termin">Termin</label>
+                        <input type="text" class="form-control" id="termin">
+                      </div>
+                      <div class="form-group">
+                        <label for="ostalo">Ostalo (želje glede pričeske itd.)</label>
+                        <textarea class="form-control" id="ostalo"></textarea>  
+                      </div>
+
+                      <div class="checkbox">
+                        <label><input type="checkbox">Strinjam se, da je Mirko najboljši frizer.</label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Pošlji</button>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <h3>Delovni čas</h3>        
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Dan</th>
+                        <th>Delovne ure</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ponedeljek</td>
+                        <td>8.00 &ndash; 16.00</td>
+                      </tr>
+                      <tr>
+                        <td>Torek</td>
+                        <td>10.00 &ndash; 18.00</td>
+                      </tr>
+                      <tr>
+                        <td>Sreda</td>
+                        <td>8.00 &ndash; 16.00</td>
+                      </tr>
+                      <tr>
+                        <td>Četrtek</td>
+                        <td>8.00 &ndash; 16.00</td>
+                      </tr>
+                      <tr>
+                        <td>Petek</td>
+                        <td>12.00 &ndash; 20.00</td>
+                      </tr>
+                      <tr>
+                        <td>Sobota</td>
+                        <td>8.00 &ndash; 16.00</td>
+                      </tr>
+                      <tr>
+                        <td>Nedelja</td>
+                        <td>8.00 &ndash; 12.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 <p>*Ob praznikih velja nedeljski urnik.</p>    
+                </div>
+            </div>
+        </div>
+        <!-- Naroči se konec -->
+        <hr>    
+        <!-- FAQ pogosta vprašanja -->
+        <a name="faq"></a>
+        <div class="container">
+            <div class="row">
+                <h1 class="header-center">FAQ (pogosta vprašanja in odgovori)</h1>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Kakšen je salon in ekipa?</h3>
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt nulla sed sapien consequat, quis eleifend ligula maximus. Vivamus at hendrerit turpis. Aliquam tristique velit et tristique rutrum. Phasellus suscipit ut neque in molestie. Sed eu orci felis. Aliquam placerat diam at ultrices fringilla. Pellentesque laoreet justo tincidunt sodales ultrices. Maecenas at iaculis enim, sed pulvinar libero. Proin blandit aliquet interdum. Donec pulvinar non lectus non ornare. Suspendisse potenti. Vivamus nec ipsum ac enim sollicitudin mollis vel sit amet mi. Quisque feugiat consequat arcu, vitae mattis urna iaculis eget.</p>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Ali sprejemate hišne ljubljenčke?</h3>
+              </div>
+              <div class="panel-body">
+                <p>Morbi id odio nisl. In scelerisque placerat lectus vitae rhoncus. Duis sed lectus non diam imperdiet luctus. Curabitur feugiat dui vitae pretium vestibulum. Praesent posuere sem sed mauris bibendum, vel maximus lacus tristique. Proin a consequat justo. Aliquam sapien est, vestibulum sit amet lorem id, lobortis tristique nisl.</p>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Imate kakšne nagrade s tekmovanj?</h3>
+              </div>
+              <div class="panel-body">
+                <p>Vestibulum pharetra ante in facilisis scelerisque. In tempor mollis magna sit amet maximus. Quisque enim tellus, viverra a urna ut, vestibulum rhoncus ex. Duis ornare augue sit amet ligula bibendum fermentum. Cras vitae metus nec tellus vulputate ultrices. Maecenas vel risus nec erat efficitur elementum volutpat vitae lectus. Aenean mollis, elit sed feugiat dictum, lorem felis dictum nisi, eu bibendum neque enim id orci. Nulla facilisi. Morbi ultricies euismod mi nec ultricies.</p>
+              </div>
+            </div>
+            
+        </div>
+        <!-- FAQ pogosta vprašanja konec -->
+        <hr>
+        <!-- Kontakt -->
+        <a name="kontakt"></a>            
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Kontakt</h1>
+                    <p>Frizer Mirko s.p.</p>
+                    <p>Davčna številka SI-12435345</p>
+                    <p>Frizerska ulica 5, 1000 Ljubljana</p>
+                    <p>
+                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp; 051 312 124 
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp; <a href="mailto:frizer.mirko@f-mirko.com">frizer.mirko@f-mirko.com</a>
+                    </p>
+                </div>
+                <div class="col-md-6 center-slika">
+                    <img src="img/haidresser-mirko-logo-footer.png">
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigacija</h3>
+                    <p><a href="#kaj-nudimo">Kaj nudimo</a></p>
+                    <p><a href="#naroci-se">Naroči se</a></p>
+                    <p><a href="#faq">FAQ</a></p>
+                    <p><a href="#kontakt">Kontakt</a></p>        
+                </div>
+            </div>
+            
+            
+        </div>    
+        <!-- Kontakt konec -->    
+        <!-- Copyright -->
+        <h6>&copy; 2016, Frizer Mirko s.p.</h6>
+        <!-- Copyright konec>
+  </body>
+</html>
